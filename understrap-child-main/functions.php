@@ -22,6 +22,11 @@ function understrap_remove_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'understrap_remove_scripts', 20 );
 
+function menu_carta_sc() {
+    return 'Este texto es lo que printara por pantalla el shorcut';
+}
+
+add_shortcode('menu_carta', 'menu_carta_sc'); 
 
 
 /**
